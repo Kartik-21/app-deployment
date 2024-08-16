@@ -5,6 +5,8 @@ FROM tomcat:latest
 COPY target/app.jar /usr/local/tomcat/lib/
 
 # Optionally, you can copy your web application (WAR file) if needed
+# We can take name as 'ROOT' so, it directly run with '/' context path
+# In tomcat ROOT as default path
 #COPY /target/app.war /usr/local/tomcat/webapps/
 
 # If you have a specific Tomcat configuration, copy it as well

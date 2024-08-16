@@ -1,5 +1,6 @@
-From nginx:1.25.3
+FROM nginx:1.25.3
 
-# cmd flutter build web
+#cmd flutter build web
 
-COPY web/ /usr/share/nginx/html
+#copy all contain of web folder excluding the current web folder to /html folder
+COPY web/ /usr/share/nginx/html/
