@@ -1,0 +1,15 @@
+FROM tomcat:latest
+
+#ENV CATALINA_HOME /usr/local/tomcat
+
+#COPY target/app.jar /usr/local/tomcat/lib/
+
+# Optionally, you can copy your web application (WAR file) if needed
+COPY /target/app.war /usr/local/tomcat/webapps/
+
+# If you have a specific Tomcat configuration, copy it as well
+# COPY tomcat-config/* /usr/local/tomcat/conf/
+
+#EXPOSE 8080
+
+CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]

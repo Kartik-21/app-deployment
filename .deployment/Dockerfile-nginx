@@ -1,0 +1,5 @@
+From nginx:1.25.3
+
+# cmd flutter build web
+
+COPY web/ /usr/share/nginx/html
