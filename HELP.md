@@ -24,3 +24,12 @@ for deploying war
 
 for static site
 1. add file in to webapps folder
+
+
+- job_name: 'Spring boot Application'
+  metrics_path: '/actuator/prometheus'
+  scrape_interval: 1s
+  static_configs:
+  - targets: ['host.docker.internal:8080']
+  labels:
+  application: 'My Spring Boot Application'

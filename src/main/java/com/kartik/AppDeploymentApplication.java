@@ -1,4 +1,4 @@
-package com.kartik.app_deployment;
+package com.kartik;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

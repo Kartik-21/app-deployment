@@ -1,4 +1,4 @@
-package com.kartik.app_deployment;
+package com.kartik;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
